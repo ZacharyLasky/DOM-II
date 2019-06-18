@@ -69,3 +69,11 @@ const divClick = document.querySelector('.destination');
 divClick.addEventListener('click', event => {
     alert('div click?');
 })
+
+//stretch task
+
+const boatImg = document.querySelector('.boatImg');
+
+window.onload = function(){
+    TweenLite.to(boatImg, 3, {left:"440px", ease:Bounce.easeOut});
+  }
