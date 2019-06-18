@@ -10,6 +10,13 @@ navLinks.forEach(link => {
     })    
 })
 
+navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault();
+    })
+})
+
+
 const bus = document.querySelector('.bus1');
 document.addEventListener('keydown', event => {
     bus.style.border = '10px solid pink';
@@ -51,3 +58,14 @@ go.addEventListener('copy', event => {
     alert('copy!');
 })
 
+const button = document.querySelector('.destination > .btn');
+button.addEventListener('click', event => {
+    stopPropogation();
+    alert('button click');
+    
+})
+
+const divClick = document.querySelector('.destination');
+divClick.addEventListener('click', event => {
+    alert('div click?');
+})
