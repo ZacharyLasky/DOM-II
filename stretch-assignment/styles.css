@@ -20,6 +20,7 @@ body {
 }
 .block--green {
   background-color: green;
+  z-index: 5;
 }
 .block--pink {
   background-color: pink;
